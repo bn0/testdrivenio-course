@@ -1,11 +1,11 @@
 import os
-import datetime
-from flask import Flask, jsonify
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 
 # instantiate the db
 db = SQLAlchemy()
+
 
 def create_app(script_info=None):
     # instantiate app
@@ -18,7 +18,7 @@ def create_app(script_info=None):
     # check config
     # import sys
     # print(app.config, file=sys.stderr)
-    
+
     # set up extensions
     db.init_app(app)
 

@@ -140,10 +140,9 @@ class TestUserService(BaseTestCase):
             self.assertIn('success', data['status'])
 
 
-
-
 def main():
     unittest.main()
+
 
 if __name__ == '__main__':
     main()
